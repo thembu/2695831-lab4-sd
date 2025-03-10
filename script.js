@@ -10,7 +10,7 @@ let submitContent = () => {
     fetch(`https://restcountries.com/v3.1/name/${input.value}`)
         .then((res) => {
             if (!res.ok) {
-                throw new Error('Country not found');
+                throw new Error('Country not found enter correct name');
             }
             return res.json();
         })
